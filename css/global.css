@@ -1,0 +1,448 @@
+/*********************************************************/
+/*                           GENERAL                     */
+/*********************************************************/
+
+body,html {
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #151515;
+    font-weight: bold;
+    text-align: center;
+}
+
+#hamburger {
+    width: 50px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+ul, label {
+    display: block;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    word-break: break-all;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+input[type="submit"], button {
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+input[type="submit"]:focus, button:focus {
+    outline: none;
+}
+
+input[type="submit"]:active, button:active {
+    -webkit-box-shadow: inset 0px 0px 5px #000;
+     -moz-box-shadow: inset 0px 0px 5px #000;
+          box-shadow: inset 0px 0px 5px #000;
+}
+
+input[type="password"], input[type="text"], input[type="number"], textarea, select {
+    box-sizing: border-box;
+    background: #131313;
+    border: 3px solid;
+    border-color: #767676;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+input[type="password"], input[type="text"], input[type="number"], select {
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+textarea {
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    height: 150px;
+    border-radius: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+input[type="password"]:focus, input[type="text"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+
+input[type='checkbox'] {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr {
+    border-bottom: 1px solid;
+}
+
+table tr:last-child {
+    border: none;
+}
+
+table tr th {
+    font-weight: bold;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding: 0px 10px 10px 10px;
+}
+
+table tr td {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    padding: 10px;
+}
+
+table tr:last-child td {
+    padding: 10px 10px 0px 10px;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.error {
+    color: red !important;
+}
+
+
+.blue a, .blue label, .blue table th, .blue h1, .blue h2, .blue h3, .blue h4 {
+    color: #2399ff;
+}
+
+.blue button, .blue input[type="submit"] {
+    background: #2399ff;
+}
+
+.blue input[type="password"]:focus, .blue input[type="text"]:focus, .blue input[type="number"]:focus, .blue textarea:focus, .blue select:focus, .blue table tr, .blue .block {
+    border-color: #2399ff;
+}
+
+.blue a:hover {
+    color: #7ad6ff;
+}
+
+.blue button:hover, .blue input[type="submit"]:hover {
+    background: #7ad6ff;
+}
+
+
+/*********************************************************/
+/*                           HEADER                      */
+/*********************************************************/
+
+#header {
+    background: #2399ff;
+}
+
+#header .block {
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+#main-navigation {
+    padding: 8px;
+}
+
+#main-navigation a {
+    color: #000;
+    font-weight: bolder;
+    display: inline-block; 
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1px 7px;
+}
+
+#main-navigation a:hover
+{
+    text-decoration: overline;
+}
+
+#main-navigation .currHeaderItem
+{
+    border: 3px solid;
+    border-radius: 99999px;
+}
+
+#main-navigation .currHeaderItem:hover {
+    text-decoration: none;
+}
+
+
+
+/*********************************************************/
+/*                    MAIN PAGES LAYOUT                  */
+/*********************************************************/
+
+.content_wrapper {
+    display: block;
+    width: 100%;
+    color: #fff;
+    float: left;
+}
+
+.content {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*********************************************************/
+/*                           BLOCKS                      */
+/*********************************************************/
+
+.row {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rowColumn {
+    float: left;
+}
+
+.rowColumn1 {
+    width: 100%;
+}
+
+.rowColumn2 {
+    width: 50%;
+}
+
+.rowColumn3 {
+    width: 33.3%;
+}
+
+.rowColumn6 {
+    width: 16.6%;
+}
+
+.rowColumn7 {
+    width: 14.28%;
+}
+
+.block {
+    text-align: center;
+    margin: 8px;
+    border: 3px solid;
+    padding: 20px;
+    border-radius: 20px;
+    background: #000;
+}
+
+.block p:first-child, .block h1, .block h2, .block h3 {
+    margin-top: 0;
+}
+
+.block p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.rowPerfectWidth .rowColumn {
+    width: 350px !important;
+}
+
+.rowPerfectWidth input[type="text"], .rowPerfectWidth input[type="password"] {
+    width: 100%;
+}
+
+.rowPerfectWidth input[type="submit"] {
+    width: 150px;
+}
+
+
+
+
+.titleRow .block {
+    background: #2399ff;
+    padding: 3px;
+}
+
+.titleRow .block h1, .titleRow .block h2, .titleRow .block h3 {
+    margin: 0;
+    color: #000;
+}
+
+
+/*********************************************************/
+/*                 ORDERS & TIKETS TABLES                */
+/*********************************************************/
+
+
+
+/*********************************************************/
+/*                         PAGINATION                    */
+/*********************************************************/
+
+#pagination .block {
+    padding: 10px;
+}
+
+#pagination .rowColumn {
+    width: auto;
+}
+
+#pagination li {
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+#pagination li a {
+    padding: 5px 10px;
+    border: 1.5px dashed;
+    border-radius: 99999px;
+}
+
+#pagination .paginationCurrent a {
+    color: #000;
+    border-color: #2399ff;
+    background: #2399ff;
+}
+
+
+/************************************************/
+/*******************  MOBILE  *******************/
+/************************************************/
+
+@media screen and (max-width: 1600px)
+{
+    .rowColumn6 {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+    .rowColumn6 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .rowColumn3 {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .rowColumn6 {
+        width: 33%;
+    }
+}
+
+
+@media screen and (max-width: 850px)
+{
+    /* tables */
+    
+    th, td {
+        display: block;
+        padding: 5px !important;
+    }
+    
+    td:first-child {
+        margin-top: 10px;
+    }
+    
+    th:last-child, td:last-child {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 750px)
+{
+    .rowColumn2 {
+        width: 100%;
+    }
+    
+    .rowColumn3 {
+        width: 100%;
+    }
+
+    .rowColumn6 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    #main-navigation a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+    #main-navigation a:hover {
+        text-decoration: none;
+    }
+    
+    .currHeaderItem {
+        background: #000;
+        border: none;
+        color: #2399ff !important;
+    }
+}
+
+
+
+@media screen and (max-width: 600px)
+{
+    .content {
+        padding: 0px;
+    }
+
+    .rowColumn6 {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 500px)
+{
+
+}
