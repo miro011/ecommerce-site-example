@@ -1,0 +1,13 @@
+input[type="text"], input[type="number"], textarea {
+    width: 50%;
+    min-width: 300px;
+}
+
+#productsRow img {
+    width: 100%;
+}
+
+#productImg {
+    width: 100%;
+    max-width: 500px;
+}
