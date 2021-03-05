@@ -1,0 +1,9 @@
+@media screen and (max-width: 850px) {
+    th {
+        border-top: none !important;
+    }
+    
+    th:first-child {
+        border-top: 3px solid !important;
+    }
+}
